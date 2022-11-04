@@ -6,6 +6,14 @@ function colorChange1(event) {
   document.body.classList.add("stop-scrolling");
 }
 
+function colorChange2(event) {
+  event.preventDefault();
+  let card2 = document.querySelector("#tarjeta2");
+  card2.classList.add("active");
+  document.getElementById("popup1").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
 function answerChange(event) {
   event.preventDefault();
   console.log("hola mundo")
@@ -22,10 +30,13 @@ function closePop(event){
 let result1 = document.querySelector("#tarjeta1");
 result1.addEventListener("click", colorChange1);
 
+let result2 = document.querySelector("#tarjeta2");
+result2.addEventListener("click", colorChange2);
+
 let resalte = document.querySelector(".resultado");
 resalte.addEventListener("click", answerChange);
 
 let done = document.querySelector(".aceptar");
-done.addEventListener("click", closePop)
+done.addEventListener("click", closePop);
 
 
