@@ -1,3 +1,6 @@
+
+//Primera Columna
+
 function colorChange1(event) {
   event.preventDefault();
   let card1 = document.querySelector("#tarjetaA1");
@@ -114,6 +117,8 @@ done3.addEventListener("click", closePop3);
 let done4 = document.querySelector("#boton-aceptarA4");
 done4.addEventListener("click", closePop4);
 
+//Segunda columna
+
 function colorChangeB1(event) {
   event.preventDefault();
   let cardB1 = document.querySelector("#tarjetaB1");
@@ -229,3 +234,239 @@ doneB3.addEventListener("click", closePopB3);
 
 let doneB4 = document.querySelector("#boton-aceptarB4");
 doneB4.addEventListener("click", closePopB4);
+
+//Tercera columna
+
+function colorChangeC1(event) {
+  event.preventDefault();
+  let cardC1 = document.querySelector("#tarjetaC1");
+  cardC1.classList.add("active");
+  document.getElementById("popupC1").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeC2(event) {
+  event.preventDefault();
+  let cardC2 = document.querySelector("#tarjetaC2");
+  cardC2.classList.add("active");
+  document.getElementById("popupC2").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeC3(event) {
+  event.preventDefault();
+  let cardC3 = document.querySelector("#tarjetaC3");
+  cardC3.classList.add("active");
+  document.getElementById("popupC3").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeC4(event) {
+  event.preventDefault();
+  let cardC4 = document.querySelector("#tarjetaC4");
+  cardC4.classList.add("active");
+  document.getElementById("popupC4").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function answerChangeC1(event) {
+  event.preventDefault();
+  let answerC1 = document.querySelector("#respuestaC1");
+  answerC1.classList.add("resalte");
+}
+
+function answerChangeC2(event) {
+  event.preventDefault();
+  let answerC2 = document.querySelector("#respuestaC2");
+  answerC2.classList.add("resalte");
+}
+
+function answerChangeC3(event) {
+  event.preventDefault();
+  let answerC3 = document.querySelector("#respuestaC3");
+  answerC3.classList.add("resalte");
+}
+
+function answerChangeC4(event) {
+  event.preventDefault();
+  let answerC4 = document.querySelector("#respuestaC4");
+  answerC4.classList.add("resalte");
+}
+
+function closePopC1(event) {
+  event.preventDefault();
+  document.getElementById("popupC1").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopC2(event) {
+  event.preventDefault();
+  document.getElementById("popupC2").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopC3(event) {
+  event.preventDefault();
+  document.getElementById("popupC3").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopC4(event) {
+  event.preventDefault();
+  document.getElementById("popupC4").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+let resultC1 = document.querySelector("#tarjetaC1");
+resultC1.addEventListener("click", colorChangeC1);
+
+let resultC2 = document.querySelector("#tarjetaC2");
+resultC2.addEventListener("click", colorChangeC2);
+
+let resultC3 = document.querySelector("#tarjetaC3");
+resultC3.addEventListener("click", colorChangeC3);
+
+let resultC4 = document.querySelector("#tarjetaC4");
+resultC4.addEventListener("click", colorChangeC4);
+
+let resalteC1 = document.querySelector("#boton-respuestaC1");
+resalteC1.addEventListener("click", answerChangeC1);
+
+let resalteC2 = document.querySelector("#boton-respuestaC2");
+resalteC2.addEventListener("click", answerChangeC2);
+
+let resalteC3 = document.querySelector("#boton-respuestaC3");
+resalteC3.addEventListener("click", answerChangeC3);
+
+let resalteC4 = document.querySelector("#boton-respuestaC4");
+resalteC4.addEventListener("click", answerChangeC4);
+
+let doneC1 = document.querySelector("#boton-aceptarC1");
+doneC1.addEventListener("click", closePopC1);
+
+let doneC2 = document.querySelector("#boton-aceptarC2");
+doneC2.addEventListener("click", closePopC2);
+
+let doneC3 = document.querySelector("#boton-aceptarC3");
+doneC3.addEventListener("click", closePopC3);
+
+let doneC4 = document.querySelector("#boton-aceptarC4");
+doneC4.addEventListener("click", closePopC4);
+
+//Cuarta columna
+
+function colorChangeD1(event) {
+  event.preventDefault();
+  let cardD1 = document.querySelector("#tarjetaD1");
+  cardD1.classList.add("active");
+  document.getElementById("popupD1").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeD2(event) {
+  event.preventDefault();
+  let cardD2 = document.querySelector("#tarjetaD2");
+  cardD2.classList.add("active");
+  document.getElementById("popupD2").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeD3(event) {
+  event.preventDefault();
+  let cardD3 = document.querySelector("#tarjetaD3");
+  cardD3.classList.add("active");
+  document.getElementById("popupD3").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function colorChangeD4(event) {
+  event.preventDefault();
+  let cardD4 = document.querySelector("#tarjetaD4");
+  cardD4.classList.add("active");
+  document.getElementById("popupD4").style.display = "block";
+  document.body.classList.add("stop-scrolling");
+}
+
+function answerChangeD1(event) {
+  event.preventDefault();
+  let answerD1 = document.querySelector("#respuestaD1");
+  answerD1.classList.add("resalte");
+}
+
+function answerChangeD2(event) {
+  event.preventDefault();
+  let answerD2 = document.querySelector("#respuestaD2");
+  answerD2.classList.add("resalte");
+}
+
+function answerChangeD3(event) {
+  event.preventDefault();
+  let answerD3 = document.querySelector("#respuestaD3");
+  answerD3.classList.add("resalte");
+}
+
+function answerChangeD4(event) {
+  event.preventDefault();
+  let answerD4 = document.querySelector("#respuestaD4");
+  answerD4.classList.add("resalte");
+}
+
+function closePopD1(event) {
+  event.preventDefault();
+  document.getElementById("popupD1").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopD2(event) {
+  event.preventDefault();
+  document.getElementById("popupD2").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopD3(event) {
+  event.preventDefault();
+  document.getElementById("popupD3").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+function closePopD4(event) {
+  event.preventDefault();
+  document.getElementById("popupD4").style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+
+let resultD1 = document.querySelector("#tarjetaD1");
+resultD1.addEventListener("click", colorChangeD1);
+
+let resultD2 = document.querySelector("#tarjetaD2");
+resultD2.addEventListener("click", colorChangeD2);
+
+let resultD3 = document.querySelector("#tarjetaD3");
+resultD3.addEventListener("click", colorChangeD3);
+
+let resultD4 = document.querySelector("#tarjetaD4");
+resultD4.addEventListener("click", colorChangeD4);
+
+let resalteD1 = document.querySelector("#boton-respuestaD1");
+resalteD1.addEventListener("click", answerChangeD1);
+
+let resalteD2 = document.querySelector("#boton-respuestaD2");
+resalteD2.addEventListener("click", answerChangeD2);
+
+let resalteD3 = document.querySelector("#boton-respuestaD3");
+resalteD3.addEventListener("click", answerChangeD3);
+
+let resalteD4 = document.querySelector("#boton-respuestaD4");
+resalteD4.addEventListener("click", answerChangeD4);
+
+let doneD1 = document.querySelector("#boton-aceptarD1");
+doneD1.addEventListener("click", closePopD1);
+
+let doneD2 = document.querySelector("#boton-aceptarD2");
+doneD2.addEventListener("click", closePopD2);
+
+let doneD3 = document.querySelector("#boton-aceptarD3");
+doneD3.addEventListener("click", closePopD3);
+
+let doneD4 = document.querySelector("#boton-aceptarD4");
+doneD4.addEventListener("click", closePopD4);
